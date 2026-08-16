@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HELIX ELEVATORS</title>
+    <meta name="description" content="">
+    <!-- Favicons -->
+    <link rel="icon" href="assets/images/favicon.svg">
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.svg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="bg-white py-4 px-2 md:px-6 ">
+        <div class="container mx-auto flex  justify-between items-center">
+
+            <a href="index.html"><img loading="lazy" src="assets/images/helix-elevator-logo.svg"
+                    class="h-10 md:h-auto" /></a>
+
+            <!-- Mobile Toggle -->
+            <button id="menuBtn" class="md:hidden text-2xl">
+                ☰
+            </button>
+
+            <!-- Main Menu -->
+            <ul id="menu"
+                class="hidden md:flex md:items-center md:space-x-6 text-lg font-semibold absolute md:static left-0 top-16 w-full md:w-auto bg-white md:bg-transparent p-4 md:p-0 z-50">
+
+                <li>
+                    <a href="index.html"
+                        class="text-[#20314A] px-4 py-2 rounded hover:text-[#ED3237] transition block">Home</a>
+                </li>
+
+                <li> <a href="about-us.html"
+                        class="text-[#20314A] px-4 py-2 rounded hover:text-[#ED3237] transition block">About Us</a>
+                </li>
+
+                <!-- Products -->
+                <li class="relative group">
+                    <button id="productBtn"
+                        class="flex items-center justify-between w-full md:w-auto py-2 px-4 transition hover:text-[#ED3237] group-hover:text-[#ED3237]">
+                        Products
+
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+
+                    <ul id="productMenu"
+                        class="hidden md:absolute md:top-full text-base md:left-0 md:w-[200px] font-normal bg-white shadow-lg rounded-md md:group-hover:block z-50">
+
+                        <!-- Elevators -->
+                        <li class="relative group/submenu">
+
+                            <button
+                                class="submenu-toggle flex items-center justify-between w-full px-4 py-3 hover:bg-gray-100 hover:text-[#ED3237] group-hover/submenu:text-[#ED3237]">
+                                Elevators
+
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7" />
+                                </svg>
+                            </button>
+
+                            <!-- Third Level -->
+                            <ul
+                                class="third-level hidden md:absolute md:left-full md:top-0 md:w-[200px] font-normal bg-white shadow-lg rounded-md md:group-hover/submenu:block">
+
+                                <li>
+                                    <a class="block px-4 py-2 hover:bg-gray-100 hover:text-[#ED3237]"
+                                        href="autodoor-elevator.html">
+                                        Autodoor Elevators
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="block px-4 py-2 hover:bg-gray-100 hover:text-[#ED3237]"
+                                        href="capsule-elevator.html">
+                                        Capsule Elevators
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="block px-4 py-2 hover:bg-gray-100 hover:text-[#ED3237]"
+                                        href="hospital-elevator.html">
+                                        Hospital Elevators
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="block px-4 py-2 hover:bg-gray-100 hover:text-[#ED3237]"
+                                        href="goods-elevator.html">
+                                        Goods Elevators
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="block px-4 py-2 hover:bg-gray-100 hover:text-[#ED3237]"
+                                        href="mrl-elevator.html">
+                                        MRL Elevators
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="block px-4 py-2 hover:bg-gray-100 hover:text-[#ED3237]"
+                                        href="home-elevator.html">
+                                        Home Elevators
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="block px-4 py-2 hover:bg-gray-100 hover:text-[#ED3237]"
+                                        href="hydraulic-elevator.html">
+                                        Hydraulic Elevators
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="block px-4 py-2 hover:bg-gray-100 hover:text-[#ED3237]"
+                                        href="car-elevator.html">
+                                        Car Elevators
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li class="relative group/submenu">
+
+                            <button
+                                class="submenu-toggle flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 hover:text-[#ED3237] group-hover/submenu:text-[#ED3237]">
+                                Doors Design
+
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7" />
+                                </svg>
+                            </button>
+
+                            <!-- Third Level -->
+                            <ul
+                                class="third-level hidden md:absolute md:left-full md:top-0 md:w-[200px] font-normal bg-white shadow-lg rounded-md md:group-hover/submenu:block">
+
+                                <li>
+                                    <a class="block px-4 py-2 hover:bg-gray-100 hover:text-[#ED3237] rounded-t-md"
+                                        href="automatic-doors.html">
+                                        Automatic Doors
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="block px-4 py-2 hover:bg-gray-100 hover:text-[#ED3237] rounded-b-md"
+                                        href="manual-doors.html">
+                                        Manual Doors
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="cabin-design.html" class="block px-4 py-2 hover:bg-gray-100 hover:text-[#ED3237]">
+                                Cabin Design
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="cop-lop.html" class="block px-4 py-2 hover:bg-gray-100 hover:text-[#ED3237]">
+                                COP & LOP
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="elevator-machine.html"
+                                class="block px-4 py-2 hover:bg-gray-100 hover:text-[#ED3237]">
+                                Elevator Machine
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="control-panel.html" class="block px-4 py-2 hover:bg-gray-100 hover:text-[#ED3237]">
+                                Control Panel
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="services.html"
+                        class="text-[#20314A] px-4 py-2 rounded hover:text-[#ED3237] transition block">Services</a>
+
+                </li>
+
+                <li>
+                    <a href="contact-us.html"
+                        class="text-[#20314A] px-4 py-2 rounded hover:text-[#ED3237] transition block">Contact Us</a>
+                </li>
+
+            </ul>
+
+        </div>
+        <script>
+            // Mobile Main Menu
+            const menuBtn = document.getElementById('menuBtn');
+            const menu = document.getElementById('menu');
+
+            menuBtn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+
+            // Mobile Level 2
+            const productBtn = document.getElementById('productBtn');
+            const productMenu = document.getElementById('productMenu');
+
+            productBtn.addEventListener('click', () => {
+                if (window.innerWidth < 768) {
+                    productMenu.classList.toggle('hidden');
+                }
+            });
+
+            // Mobile Level 3
+            document.querySelectorAll('.submenu-toggle').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    if (window.innerWidth < 768) {
+                        btn.nextElementSibling.classList.toggle('hidden');
+                    }
+                });
+            });
+        </script>
+    </header>
+
+    <section
+        class="bg-[#131F30] bg-[url('assets/images/cabin-design-banner-mobile.jpg')] md:bg-[url('assets/images/cabin-design-banner.jpg')] bg-no-repeat bg-cover bg-center md:bg-right h-[calc(100vh-92px)] flex items-start md:items-center py-10 md:py-20  px-2 md:px-6">
+        <div class="container mx-auto h-[30%] md:h-auto flex items-center">
+            <div class="grid grid-cols-12">
+                <div class="col-span-12  md:col-span-4 text-center md:text-left ">
+                    <p class="text-lg text-[#316CBF] uppercase mb-1">Cabin Design</p>
+                    <h1 class="font-bold text-[36px] md:text-[48px] leading-snug  md:leading-tight text-white">Designs that
+elevate <span
+                            class="text-[#ED3237] block">the
+building’s look
+and feel</span></h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-white py-10 md:py-20  px-2 md:px-6 ">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-10">
+                <div class="col-span-3 p-2 flex">
+                    <div class="shadow-[0_0_10px_rgba(0,0,0,0.25)]  ">
+                        <div
+                            class="bg-[#F2F2F2] bg-[url('assets/images/pattern-bg.png')] bg-repeat p-8 min-h-[404px] flex items-center justify-center">
+                            <img src="assets/images/cabin-01.png" class="mx-auto">
+                        </div>
+                        <h3 class="text-lg md:text-xl font-bold text-[#316CBF] p-4 items-end ">
+                            Contrast of light and shadows using sharp lines
+                        </h3>
+                    </div>
+                </div>
+                <div class="col-span-3 p-2 flex">
+                    <div class="shadow-[0_0_10px_rgba(0,0,0,0.25)] w-full ">
+                        <div
+                            class="bg-[#F2F2F2] bg-[url('assets/images/pattern-bg.png')] bg-repeat p-8 min-h-[404px] flex items-center justify-center">
+                            <img src="assets/images/cabin-02.png" class="mx-auto">
+                        </div>
+                        <h3 class="text-lg md:text-xl font-bold text-[#316CBF] p-4 items-end ">
+                            S.S. Mirror Cabin
+                        </h3>
+                    </div>
+                </div>
+                <div class="col-span-3 p-2 flex">
+                    <div class="shadow-[0_0_10px_rgba(0,0,0,0.25)]  w-full">
+                        <div class="bg-[#F2F2F2] bg-[url('assets/images/pattern-bg.png')] bg-repeat p-8 ">
+                            <img src="assets/images/cabin-03.png" class="mx-auto">
+                        </div>
+                        <h3 class="text-lg md:text-xl font-bold text-[#316CBF] p-4 items-end ">
+                            Standard S.S. Designer Cabin
+                        </h3>
+                    </div>
+                </div>
+                <div class="col-span-3 p-2 flex">
+                    <div class="shadow-[0_0_10px_rgba(0,0,0,0.25)]  w-full">
+                        <div class="bg-[#F2F2F2] bg-[url('assets/images/pattern-bg.png')] bg-repeat p-8 ">
+                            <img src="assets/images/cabin-04.png" class="mx-auto">
+                        </div>
+                        <h3 class="text-lg md:text-xl font-bold text-[#316CBF] p-4 items-end ">
+                            S.S. Designer Cabin
+                        </h3>
+                    </div>
+                </div>
+                <div class="col-span-3 p-2 flex">
+                    <div class="shadow-[0_0_10px_rgba(0,0,0,0.25)]  w-full">
+                        <div class="bg-[#F2F2F2] bg-[url('assets/images/pattern-bg.png')] bg-repeat p-8 ">
+                            <img src="assets/images/cabin-05.png" class="mx-auto">
+                        </div>
+                        <h3 class="text-lg md:text-xl font-bold text-[#316CBF] p-4 items-end ">
+                            S.S. & Golden Strip Designer Cabin
+                        </h3>
+                    </div>
+                </div>
+                <div class="col-span-3 p-2 flex">
+                    <div class="shadow-[0_0_10px_rgba(0,0,0,0.25)]  w-full">
+                        <div class="bg-[#F2F2F2] bg-[url('assets/images/pattern-bg.png')] bg-repeat p-8 ">
+                            <img src="assets/images/cabin-06.png" class="mx-auto">
+                        </div>
+                        <h3 class="text-lg md:text-xl font-bold text-[#316CBF] p-4 items-end ">
+                            S.S. Designer Cabin With Glass
+                        </h3>
+                    </div>
+                </div>
+                <div class="col-span-3 p-2 flex">
+                    <div class="shadow-[0_0_10px_rgba(0,0,0,0.25)] w-full w-full ">
+                        <div class="bg-[#F2F2F2] bg-[url('assets/images/pattern-bg.png')] bg-repeat p-8 ">
+                            <img src="assets/images/cabin-07.png" class="mx-auto">
+                        </div>
+                        <h3 class="text-lg md:text-xl font-bold text-[#316CBF] p-4 items-end ">
+                            Golden Decorative Cabin
+                        </h3>
+                    </div>
+                </div>
+                <div class="col-span-3 p-2 flex">
+                    <div class="shadow-[0_0_10px_rgba(0,0,0,0.25)] w-full ">
+                        <div class="bg-[#F2F2F2] bg-[url('assets/images/pattern-bg.png')] bg-repeat p-8 ">
+                            <img src="assets/images/cabin-08.png" class="mx-auto">
+                        </div>
+                        <h3 class="text-lg md:text-xl font-bold text-[#316CBF] p-4 items-end ">
+                            Golden Designer Cabin
+                        </h3>
+                    </div>
+                </div>
+                <div class="col-span-3 p-2  flex">
+                    <div class="shadow-[0_0_10px_rgba(0,0,0,0.25)] w-full ">
+                        <div class="bg-[#F2F2F2] bg-[url('assets/images/pattern-bg.png')] bg-repeat p-8 ">
+                            <img src="assets/images/cabin-09.png" class="mx-auto">
+                        </div>
+                        <h3 class="text-lg md:text-xl font-bold text-[#316CBF] p-4 items-end ">
+                            Black Mirror Finish Designer Cabin
+                        </h3>
+                    </div>
+                </div>
+                <div class="col-span-3 p-2  flex">
+                    <div class="shadow-[0_0_10px_rgba(0,0,0,0.25)] w-full ">
+                        <div
+                            class="bg-[#F2F2F2] bg-[url('assets/images/pattern-bg.png')] bg-repeat p-8 min-h-[404px] flex items-center justify-center ">
+                            <img src="assets/images/cabin-10.png" class="mx-auto">
+                        </div>
+                        <h3 class="text-lg md:text-xl font-bold text-[#316CBF] p-4 items-end ">
+                            Customized Blue Shade Powder Coated Cabin
+                        </h3>
+                    </div>
+                </div>
+                <div class="col-span-3 p-2  flex">
+                    <div class="shadow-[0_0_10px_rgba(0,0,0,0.25)] w-full ">
+                        <div class="bg-[#F2F2F2] bg-[url('assets/images/pattern-bg.png')] bg-repeat p-8 ">
+                            <img src="assets/images/cabin-11.png" class="mx-auto">
+                        </div>
+                        <h3 class="text-lg md:text-xl font-bold text-[#316CBF] p-4 items-end ">
+                            Wooden & Glass Finish Cabin
+                        </h3>
+                    </div>
+                </div>
+                <div class="col-span-3 p-2 flex">
+                    <div class="shadow-[0_0_10px_rgba(0,0,0,0.25)] w-full ">
+                        <div class="bg-[#F2F2F2] bg-[url('assets/images/pattern-bg.png')] bg-repeat p-8 ">
+                            <img src="assets/images/cabin-12.png" class="mx-auto">
+                        </div>
+                        <h3 class="text-lg md:text-xl font-bold text-[#316CBF] p-4 items-end ">
+                            Bronze & Glass Designer Cabin
+                        </h3>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class=" pb-10 md:pb-20  px-2 md:px-6">
+        <div class="container mx-auto space-y-10">
+            <div class="grid grid-cols-12  items-center">
+                <div class="col-span-12 md:col-span-6">
+                    <h2 class="text-[30px] md:text-[40px] text-[#316CBF] tracking-tight leading-none font-semibold">Customer
+                        Capsule Type Cabin</h2>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-10">
+                <div class="col-span-3 p-2 flex">
+                    <div class="shadow-[0_0_10px_rgba(0,0,0,0.25)] w-full  ">
+                        <div
+                            class="bg-[#F2F2F2] bg-[url('assets/images/pattern-bg.png')] bg-repeat p-8 min-h-[404px] flex items-center justify-center">
+                            <img src="assets/images/cabin-13.png" class="mx-auto">
+                        </div>
+                        <h3 class="text-lg md:text-xl font-bold text-[#316CBF] p-4 items-end ">
+                            Three Side Glass Cabin
+                        </h3>
+                    </div>
+                </div>
+                <div class="col-span-3 p-2 flex">
+                    <div class="shadow-[0_0_10px_rgba(0,0,0,0.25)] w-full ">
+                        <div
+                            class="bg-[#F2F2F2] bg-[url('assets/images/pattern-bg.png')] bg-repeat p-8 min-h-[404px] flex items-center justify-center">
+                            <img src="assets/images/cabin-14.png" class="mx-auto">
+                        </div>
+                        <h3 class="text-lg md:text-xl font-bold text-[#316CBF] p-4 items-end ">
+                            One Side Glass Cabin
+                        </h3>
+                    </div>
+                </div>
+                <div class="col-span-3 p-2 flex">
+                    <div class="shadow-[0_0_10px_rgba(0,0,0,0.25)] w-full ">
+                        <div
+                            class="bg-[#F2F2F2] bg-[url('assets/images/pattern-bg.png')] bg-repeat p-8 min-h-[404px] flex items-center justify-center">
+                            <img src="assets/images/cabin-15.png" class="mx-auto">
+                        </div>
+                        <h3 class="text-lg md:text-xl font-bold text-[#316CBF] p-4 items-end ">
+                            Round Carved Glass Cabin
+                        </h3>
+                    </div>
+                </div>
+                <div class="col-span-3 p-2 flex">
+                    <div class="shadow-[0_0_10px_rgba(0,0,0,0.25)] w-full  ">
+                        <div
+                            class="bg-[#F2F2F2] bg-[url('assets/images/pattern-bg.png')] bg-repeat p-8 min-h-[404px] flex items-center justify-center">
+                            <img src="assets/images/cabin-16.png" class="mx-auto">
+                        </div>
+                        <h3 class="text-lg md:text-xl font-bold text-[#316CBF] p-4 items-end ">
+                            Square Full Glass Cabin
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class=" pb-10 md:pb-20  px-2 md:px-6">
+        <div class="container mx-auto space-y-10">
+            <div class="grid grid-cols-12  items-center">
+                <div class="col-span-12 md:col-span-6">
+                    <h2 class="text-[30px] md:text-[40px] text-[#316CBF] tracking-tight leading-none font-semibold">Type of Handrail</h2>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-10">
+                <div class="col-span-1 p-1 shadow-[0_0_10px_rgba(0,0,0,0.25)]">
+                    <img src="assets/images/handril-01.png" class="mx-auto">
+                    <h3 class="text-lg md:text-xl font-bold text-[#316CBF] p-2">Oval</h3>
+                </div>
+                <div class="col-span-1 p-1 shadow-[0_0_10px_rgba(0,0,0,0.25)]">
+                    <img src="assets/images/handril-02.png" class="mx-auto">
+                    <h3 class="text-lg md:text-xl font-bold text-[#316CBF] p-2">Flat Bar</h3>
+                </div>
+                <div class="col-span-1 p-1 shadow-[0_0_10px_rgba(0,0,0,0.25)]">
+                    <img src="assets/images/handril-03.png" class="mx-auto">
+                    <h3 class="text-lg md:text-xl font-bold text-[#316CBF] p-2">Rectangle</h3>
+                </div>
+                <div class="col-span-1 p-1 shadow-[0_0_10px_rgba(0,0,0,0.25)]">
+                    <img src="assets/images/handril-04.png" class="mx-auto">
+                    <h3 class="text-lg md:text-xl font-bold text-[#316CBF] p-2">Round</h3>
+                </div>
+                <div class="col-span-1 p-1 shadow-[0_0_10px_rgba(0,0,0,0.25)]">
+                    <img src="assets/images/handril-05.png" class="mx-auto">
+                    <h3 class="text-lg md:text-xl font-bold text-[#316CBF] p-2">Vault</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer class=" text-[#E1E1E1] text-base">
+        <div class="bg-[#373435] py-10 md:py-20  px-2 md:px-6 ">
+            <div class="container mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-10">
+
+                    <!-- Logo -->
+                    <div class="md:col-span-3">
+                        <img src="assets/images/helix-elevator-logo-w.png" alt="Helix Elevators" class="h-14 w-auto">
+                    </div>
+
+                    <!-- Head Office -->
+                    <div class="md:col-span-7">
+                        <h4 class="text-[#ED3237] text-sm font-semibold uppercase tracking-wider mb-4">
+                            Head Office
+                        </h4>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                            <div class="md:col-span-1">
+                                <p class="leading-8">
+                                    Gopinath Industrial Landmark<br>
+                                    B/h. Satadhar Estate, Kathwada,<br>
+                                    Ahmedabad-382430, Gujarat,<br>
+                                    INDIA.
+                                </p>
+                            </div>
+                            <div class="md:col-span-1">
+                                <div class="space-y-4">
+                                    <a href="tel:+919023086004"
+                                        class="flex items-center gap-3 hover:text-white transition-colors">
+                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.95.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.128a11.042 11.042 0 005.516 5.516l1.128-2.257a1 1 0 011.21-.502l4.493 1.498A1 1 0 0121 15.72V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                        </svg>
+                                        +91 90230 86004
+                                    </a>
+
+                                    <a href="tel:+919924536440"
+                                        class="flex items-center gap-3 hover:text-white transition-colors">
+                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.95.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.128a11.042 11.042 0 005.516 5.516l1.128-2.257a1 1 0 011.21-.502l4.493 1.498A1 1 0 0121 15.72V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                        </svg>
+                                        +91 99245 36440
+                                    </a>
+
+                                    <a href="mailto:info@helixelevators.in"
+                                        class="flex items-center gap-3 hover:text-white transition-colors">
+                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M16 12H8m8-4H8m10 8H6a2 2 0 01-2-2V8a2 2 0 012-2h12a2 2 0 012 2v6a2 2 0 01-2 2z" />
+                                        </svg>
+                                        info@helixelevators.in
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- Navigation -->
+                    <div class="md:col-span-2">
+                        <h4 class="text-[#ED3237] text-sm font-semibold uppercase tracking-wider mb-4">
+                            Navigation
+                        </h4>
+
+                        <ul class="space-y-3">
+                            <li>
+                                <a href="#" class="hover:text-white transition-colors">
+                                    About
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-white transition-colors">
+                                    Products
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-white transition-colors">
+                                    Services
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-white transition-colors">
+                                    Contact Us
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Copyright -->
+        <div class="bg-[#252323]  px-2 md:px-6  py-5">
+            <div class="container mx-auto  text-center">
+                <p class="text-[#E1E1E1]">
+                    Copyright © 2026 Helix Elevators. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
